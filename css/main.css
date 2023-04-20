@@ -106,12 +106,17 @@ h1.logo {
 header nav { position: relative; }
 header .main-menu { 
   display: flex;
+  flex-wrap: wrap;
+ 
   
 }
 
 .main-menu .item {
   width: 100%;
-  /* background-color: #8B8B8B; */
+  
+  flex:1;
+  
+  
 }
 
 .main-menu .item .item__name {
@@ -121,12 +126,16 @@ header .main-menu {
   font-size: 16px;
   color: var(--color-graytext); 
   font-weight: bold; 
-  width:150px;
+  width:150px; 
   text-align: center;
+  
+
+  
 }
 
 .main-menu .item .item__name:hover {
-  color:var(--color-text)
+  color: var(--color-text);
+  border-bottom: 1px solid #105A56
 }
 
 .main-menu .item .item__contents {
