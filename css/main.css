@@ -29,7 +29,6 @@ header > .inner {
   position: relative;
   width: 1024px;
   /* height: 1000px; */
-  /* background-color: rgb(191, 255, 255); */
   margin: 0 auto;
 }
 
@@ -99,43 +98,34 @@ h1.logo {
   font-size: 27px;
   text-align: center;
   padding-top: 28px;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
 }
 
 /* nav */
 header nav { position: relative; }
 header .main-menu { 
+  /* width:100%; */
   display: flex;
-  flex-wrap: wrap;
- 
+  position: absolute;
+  bottom: 0;
+  right:20px;
   
 }
 
-.main-menu .item {
-  width: 100%;
-  
-  flex:1;
-  
-  
-}
 
 .main-menu .item .item__name {
   display: block; /*위아래 패딩적용 위해서*/
-  padding: 12px 0 12px;
+  padding: 12px 45px 12px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: var(--color-graytext); 
   font-weight: bold; 
-  width:150px; 
-  text-align: center;
-  
 
-  
 }
 
 .main-menu .item .item__name:hover {
   color: var(--color-text);
-  border-bottom: 1px solid #105A56
+  
 }
 
 .main-menu .item .item__contents {
@@ -157,7 +147,6 @@ header .main-menu {
 .main-menu .item ul  {
   padding-top: 20px;
   visibility: hidden;
-  /* transition: all 0.3s; */
   height: 0;
 }
 .main-menu .item:hover ul  {
