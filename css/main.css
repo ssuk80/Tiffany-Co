@@ -167,9 +167,12 @@ header .main-menu {
 
 .main-menu .item ul li {
   height: 30px;
-  color:var(--color-graytext)
+  color:var(--color-graytext);
+  font-weight: bold;
+  
 }
 
 .main-menu .item ul li:hover {
   color: var(--color-text);
+  cursor: pointer;
 }
