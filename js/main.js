@@ -23,3 +23,27 @@ searchInputE1.addEventListener ('blur', function () {
   searchInputE1.setAttribute('placeholder','');//html속성을 추가하는 메소드
 });
 
+
+
+
+
+// 모바일 메뉴 열고 닫기
+const btnHamburger = document.querySelector ('.btn-hamburger');
+const navEl = document.querySelector('.pc-nav');
+
+const mobileNavEl = document.querySelector('.m-nav');
+const btnClose = document.querySelector('.btn-close');
+//햄버거 버튼을 클릭면 .nav 요소와 .btn-group 요소에 "active"클래스 추가 (in js)
+
+//'active'라는 클래스값이 있으면 요소 보이기!(in css)
+btnHamburger.addEventListener('click', function() {
+  // 이기능을 실행 하겠다.
+  // navEl.classList.add('active');
+  // btnGroup.classList.add('active');
+  mobileNavEl.classList.add('active');
+ 
+});
+btnClose.addEventListener('click', function () {
+
+  mobileNavEl.classList.remove('active');
+});
