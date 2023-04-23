@@ -7,6 +7,10 @@
   line-height: 1.4;
 }
 
+:root {
+  --swiper-theme-color: var(--color-pointcolor);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -22,6 +26,7 @@ html,
   --color-text: #3d3d3d;
   --color-graytext: #656565;
   --color-pointtext: #105A56;
+  --color-pointcolor: #3DBAAF;
   --color-background: #81D8D0;
 }
 
@@ -117,7 +122,7 @@ header .main-menu {
 }
 
 .main-menu .item .item__name {
-  display: block; /*위아래 패딩적용 위해서*/
+  display: block;
   padding: 12px 45px 12px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -128,8 +133,6 @@ header .main-menu {
 .main-menu .item .item__name:hover {
   color: var(--color-text);
 }
-
-
 
 .main-menu .item:hover ul  {
   visibility: visible;
@@ -146,6 +149,7 @@ header .main-menu {
   visibility: hidden;
   transition: ease-out 0.5s;
 }
+
 .main-menu .item:hover .item__contents {
   visibility: visible;
   height: 200px ;
@@ -159,9 +163,6 @@ header .main-menu {
   visibility: hidden;
   height: 0;
 }
-
-
-
 
 .main-menu .item .submenu.sub_1 { padding-left: 32px;}
 .main-menu .item .submenu.sub_2 { padding-left: 230px;}
@@ -187,8 +188,7 @@ header .main-menu {
 
 
 
-
-/* m-bav */
+/* m-nav - 모바일 나오는 메뉴 */
 header .btn-hamburger {
   position: absolute;
   top:10px;
@@ -211,8 +211,8 @@ header .m-nav .btn-close span {
   color: #fff;
 }
 
-
 header .m-nav {
+  z-index: 11;
   position: fixed;
   background-color: var(--color-background);
   height: 100vh;
@@ -265,7 +265,6 @@ header .m-nav li.m-main-menu:hover .m-menu__submenu {
   height: 200px;
 }
 
-
 header .m-nav .m-nav__submenu > li > a {
   color: var(--color-graytext);
 }
@@ -275,48 +274,47 @@ header .m-nav .m-nav__submenu > li > a:hover {
 
 
 /* 비주얼 영역 */
-section .visual { 
-  position: relative;
-  width: 100%;
-  display: flex;
-  background-color: #ccc;
-  justify-content: center;
+.visual {
   height: 480px;
-}
-
-section .swiper { 
-  display:flex; 
-  width:2310px;
-  background-color: #656565;
-  justify-content: center; 
-  
-}
-
-section .swiper-wrapper {
   display: flex;
+  justify-content: center;
+  position: relative; 
+  overflow: hidden;
+  transition: height .4s;
 }
 
-.swiper-slide {
-  position: relative;
+.visual .swiper {
+  width: 2310px;
+  height: 480px;
+  flex-shrink: 0;
+}
+
+.visual .swiper-slide {
   opacity: 0.5;
+  transition: opacity 1s;
+  position: relative;
 }
 
-.swiper-slide-active {
+.visual .swiper-slide-active {
   opacity: 1;
 }
 
-.swiper-pagination {
- 
-  bottom:0;
-  background-color: #3d3d3d;
-
-  width:500px;
-  height: 50px;
+.visual .swiper-pagination {
+  position: absolute; 
+  bottom: 20px;
+  color: var(--color-pointtext);
+  
 }
 
+.visual .swiper-button-prev {
+  left: 50%;
+  margin-left: -440px;
+}
 
-
-
+.visual .swiper-button-next {
+  right: 50%;
+  margin-right: -440px;
+}
 
 
 
@@ -358,9 +356,19 @@ section .swiper-wrapper {
     display: block;
   }
 
-  /* active 클래스가 추가되면 보이기! */
   header .pc-nav.active {
     display: block;
   }
+
+  .visual .swiper-button-prev {
+    left: 50%;
+    margin-left: -370px;
+  }
+  
+  .visual .swiper-button-next {
+    right: 50%;
+    margin-right: -370px;
+  }
+  
 }
 
