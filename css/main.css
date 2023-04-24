@@ -56,6 +56,47 @@ a:hover, a:visited, a:link, a:active {
   border: 2px solid var(--color-pointcolor);
 }
 
+/* back-to-position */
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+}
+
+.back-to-position.to-left {
+/* 오른쪽에서 왼쪽으로 나타나는 효과 */
+  transform: translateX(70px);
+}
+
+.back-to-position.to-right {
+  /* 왼쪽에서 오른쪽으로 나타나는 효과 */
+    transform: translateX(-100px);
+}
+
+.show .back-to-position {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.show .back-to-position.delay-1 {
+  transition-delay: .3s;
+}
+
+.show .back-to-position.delay-2 {
+  transition-delay: .6s;
+}
+
+.show .back-to-position.delay-3 {
+  transition-delay: .9s;
+}
+
+.show .back-to-position.delay-4 {
+  transition-delay: 1.2s;
+}
+  
+.show .back-to-position.delay-5 {
+  transition-delay: 1.5s;
+}
+  
 .inner {
   width: 1024px;
   margin: 0 auto;
@@ -67,7 +108,6 @@ header {
 
 header > .inner {
   position: relative;
-  
 }
 
 .topmenu {
@@ -452,7 +492,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
 
 .propose .propose_ring {
   position: absolute; 
-  top:150px;
+  top:-250px;
   left:300px;
 }
 
@@ -470,6 +510,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
 }
 
 .propose .text-group span {
+  display: block;
   line-height: 25px;
   color: var(--color-graytext);
  
@@ -478,6 +519,14 @@ header .m-nav .m-nav__submenu > li > a:hover {
   margin-top: 15px;
 
 }
+
+.propose .fade-in {
+  opacity: 0;
+}
+
+
+
+
 
 @media screen and (max-width:768px) {
   header {
@@ -518,7 +567,6 @@ header .m-nav .m-nav__submenu > li > a:hover {
 
   .visual {
     width:768px;
-    background-color: #3d3d3d;
     height: 500px;
     overflow: hidden;
   }
@@ -531,6 +579,10 @@ header .m-nav .m-nav__submenu > li > a:hover {
   .visual .swiper-button-next {
     right: 50%;
     margin-right: -370px;
+  }
+
+  .visual .swiper-pagination {
+    bottom: 40px;
   }
 
   .category .pic_group .pic__img {

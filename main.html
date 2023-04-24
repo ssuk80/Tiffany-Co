@@ -36,7 +36,12 @@
   <!-- 머트리얼 아이콘 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
-  
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
 
   <!-- SWIPER(8버전으로 진행) -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -261,22 +266,23 @@
     </div>
   </div>
 </section>
-<section class="propose">
+<section class="propose scroll-spy">
   <div class="bg-left"></div>
   <div class="bg-right"></div>
   <div class="inner">
     <div class="propose__content">
-      <div class="fade-in">
+      <div class="back-to-position to-right delay-1">
         <img src="./images/propose_box.png" alt="반지상자">
       </div>
-      <div class="fade-in">
+      <div class="back-to-position  delay-2">
         <img src="./images/propose_ring.png" alt="반지" class="propose_ring">
+      </div>
       <div class="text-group">
-        <p class="title">나만의 방식으로 사랑하세요</p>
-        <span class="description">누구를 위한 것인지, 알게 될 거예요.<br> 
+        <p class="title back-to-position to-right delay-3">나만의 방식으로 사랑하세요</p>
+        <span class="description back-to-position to-right delay-4">누구를 위한 것인지, 알게 될 거예요.<br> 
         언제가 좋은 타이밍인지 그냥 알 수 있어요.<br>  
         그냥 알 수 있어요.</span>
-        <a href="javascript:void(0)" class="btn "> 자세히 보기 </a>
+        <p class="back-to-position to-right delay-5"><a href="javascript:void(0)" class="btn"> 자세히 보기 </a></p>
       </div>
     </div>
   </div>
