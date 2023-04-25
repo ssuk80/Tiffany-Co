@@ -524,21 +524,23 @@ header .m-nav .m-nav__submenu > li > a:hover {
   opacity: 0;
 }
 
+.m-propose {
+  display: none;
+}
 
 
 
 
 @media screen and (max-width:768px) {
+  body { overflow-x: hidden ;}
   header {
     flex-direction: column;
     background-color: #fff;
     height: 65px;
-    overflow: hidden;
   }
 
   .inner{
     max-width:768px;
-
   }
 
   header .topmenu { 
@@ -566,19 +568,19 @@ header .m-nav .m-nav__submenu > li > a:hover {
   }
 
   .visual {
-    width:768px;
+    width:747px;
     height: 500px;
     overflow: hidden;
   }
 
   .visual .swiper-button-prev {
     left: 50%;
-    margin-left: -370px;
+    margin-left: -360px;
   }
 
   .visual .swiper-button-next {
     right: 50%;
-    margin-right: -370px;
+    margin-right: -360px;
   }
 
   .visual .swiper-pagination {
@@ -604,5 +606,46 @@ header .m-nav .m-nav__submenu > li > a:hover {
   .gemstone .gemstone-group .gemstone__box {
     width:calc(30.33% - 12px);
   } 
+  .propose {
+    display: none;
+  }
+  .m-propose {
+    position: relative;
+    display: block;
+    height: 350px;
+    margin-bottom: 50px;
+  }
+
+  /* .m-propose .img-group {
+    height: 400px;
+    background-color: #8B8B8B;
+  } */
+
+  .m-propose .img-group img {
+    width: 70%;
+  }
+    .m-propose .text-group {
+      position: absolute;
+      top:30px;
+      right:20px;
+    }
+
+    .m-propose .text-group p {
+      font-size: 18px;
+      font-weight: bold;
+      padding-bottom: 15px;
+      color: var(--color-text);
+    }
+    
+    .m-propose .text-group span {
+      display: block;
+      line-height: 25px;
+      color: var(--color-graytext);
+    
+    }
+    .m-propose .text-group .btn {
+      margin-top: 15px;
+    
+    }
 }
 
