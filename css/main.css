@@ -540,7 +540,6 @@ header .m-nav .m-nav__submenu > li > a:hover {
 }
 
 /* story */
-
 .story {
   background-color: var(--color-graybg);
   padding-bottom: 30px;
@@ -583,6 +582,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
   background-size: cover;
   height:300px;
   background-color: #105A56;
+  margin-bottom: 50px;
 }
 
 .fine .inner {
@@ -608,6 +608,55 @@ header .m-nav .m-nav__submenu > li > a:hover {
   display: block;
   right:0;
 }
+
+/* service */
+.service {
+  position: relative; 
+  margin-bottom: 50px ;
+}
+.service .inner {
+  background-color: #105A56;
+}
+.service .service__content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.service .service__content .service-box {
+  padding: 30px;
+  background-color: var(--color-graybg);
+  text-align: center;
+  margin: 0 20px;
+  flex-wrap: wrap;
+}
+
+.service .service-box .material-icons {
+  font-size: 40px;
+  color: var(--color-text);
+  padding-bottom: 20px;
+}
+
+.service .service-box span {
+  display: block;
+  line-height: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color:var(--color-graytext)
+} 
+
+.service .service-box a {
+  cursor: pointer;
+  color: var(--color-pointcolor);
+}
+
+.service .service-box a:hover {
+  color:var(--color-pointtext)
+}
+
+
+
+
+
 
 @media screen and (max-width:768px) {
   body { overflow-x: hidden ;}
@@ -675,7 +724,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
     width:calc(100%) ;
   }
 
-  .gemstone { flex-wrap: wrap;}
+  .gemstone { flex-wrap: wrap; }
 
   .gemstone .inner {
     width: 100%;
@@ -688,6 +737,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
   .propose {
     display: none;
   }
+
   .m-propose {
     position: relative;
     display: block;
@@ -698,6 +748,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
   .m-propose .img-group img {
     width: 70%;
   }
+
   .m-propose .text-group {
     position: absolute;
     top:30px;
@@ -748,5 +799,5 @@ header .m-nav .m-nav__submenu > li > a:hover {
     width: 100%;
     background-image: url(../images/fine_m_bg.jpg);
   }
-  
+
 }
