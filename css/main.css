@@ -593,19 +593,20 @@ header .m-nav .m-nav__submenu > li > a:hover {
 .fine .text-group {
   position: absolute;
   top:80px;;
-  right:10px;
+  right:60px;
 }
 
 .fine .text-group h2, .fine .text-group p {
   padding-bottom: 15px;
   text-shadow: #fff 5px 1px 5px;
   text-align: right;
+  line-height: 25px;;
 }
 
 .fine .text-group span {
   position: absolute;
   display: block;
-  right: 0;
+  right:0;
 }
 
 @media screen and (max-width:768px) {
@@ -714,12 +715,12 @@ header .m-nav .m-nav__submenu > li > a:hover {
     display: block;
     line-height: 25px;
     color: var(--color-graytext);
-  
   }
+
   .m-propose .text-group .btn {
     margin-top: 15px;
-  
   }
+
   .story {
     padding:0 20px;
     background-color: var(--color-graybg);
@@ -743,4 +744,9 @@ header .m-nav .m-nav__submenu > li > a:hover {
     width: 100%;
   }
 
+  .fine {
+    width: 100%;
+    background-image: url(../images/fine_m_bg.jpg);
+  }
+  
 }
