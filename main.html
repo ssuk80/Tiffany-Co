@@ -37,6 +37,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
 
+  <!-- 부유 요소 애니메이션 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" 
+  integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+
   <!-- ScrollMagic -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
     integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" 
@@ -222,6 +228,7 @@
     <span class="material-icons"></span>
   </div>
 </section>
+<!-- 카테고리별 보기 -->
 <section class="category">
   <div class="inner">
     <h2>카테고리별로 보기</h2>
@@ -253,19 +260,46 @@
     </div>
   </div>
 </section>
-<section class="gemstone">
+<!-- 동영상 이벤트 영역 -->
+<section class="light">
   <div class="inner">
-    <h2>젬스톤</h2>
-    <div class="gemstone-group">
-      <div class="gemstone__box" ><a href="javascript:void(0)">다이아몬드</a></div>
-      <div class="gemstone__box" ><a href="javascript:void(0)">진주</a></div>
-      <div class="gemstone__box" ><a href="javascript:void(0)">컬러 잼스톤</a></div>
-      <div class="gemstone__box" ><a href="javascript:void(0)">터쿼이즈</a></div>
-      <div class="gemstone__box" ><a href="javascript:void(0)">아쿠아마린</a></div>
-      <div class="gemstone__box" ><a href="javascript:void(0)">사파이어</a></div>
+    <div class="img-area">
+      <p class="bird"><img src="./images/brid.png" alt="bird" class="floating1"></p>
+    </div>
+    <div class="text-group">
+      <p>4월 28일,<br>광채가 당신을 기다립니다</p>
+      <span>더 랜드마크 매장이 곧 개장합니다.</span>
+      <a href="javascript:void(0)" class="btn" id="btn-modal">동영상 보러가기</a>
     </div>
   </div>
 </section>
+<!-- 동영상 모달칭 -->
+<section id="modal" class="modal-overlay">
+  <div class="modal-window">
+      <div class="close-area">
+        <span class="material-icons">close</span>
+      </div>
+      <div class="title">
+          <p>4월 28일, 광채가 당신을 기다립니다</p>
+      </div>
+      <div class="content">동영상자리</div>
+  </div>
+</section>
+<!-- 젬스톤 -->
+<section class="gemstone">
+  <div class="inner">
+    <h2>젬스톤</h2>
+    <ul class="gemstone-group">
+      <li class="gemstone__box" ><a href="javascript:void(0)">다이아몬드</a></li>
+      <li class="gemstone__box" ><a href="javascript:void(0)">진주</a></li>
+      <li class="gemstone__box" ><a href="javascript:void(0)">컬러 잼스톤</a></li>
+      <li class="gemstone__box" ><a href="javascript:void(0)">터쿼이즈</a></li>
+      <li class="gemstone__box" ><a href="javascript:void(0)">아쿠아마린</a></li>
+      <li class="gemstone__box" ><a href="javascript:void(0)">사파이어</a></li>
+    </ul>
+  </div>
+</section>
+<!-- 프로포즈 -->
 <section class="propose scroll-spy">
   <div class="bg-left"></div>
   <div class="bg-right"></div>
@@ -289,6 +323,7 @@
     </div>
   </div>
 </section>
+<!-- 프로포즈 모바일 -->
 <section class="m-propose">
   <div class="img-group"><img src="./images/propose_m_img.jpg" alt="선물상자"></div>
   <div class="text-group"> 
@@ -299,6 +334,7 @@
     <p><a href="javascript:void(0)" class="btn"> 자세히 보기 </a></p>
   </div>
 </section>
+<!-- 스토리 -->
 <section class="story">
   <div class="inner">
     <h2>스토리</h2>
@@ -330,6 +366,7 @@
     </div>
   </div>
 </section>
+<!-- 파인주얼리 -->
 <section class="fine scroll-spy">
   <div>
     <div class="inner">
@@ -343,6 +380,7 @@
     </div>
   </div>
 </section>
+<!-- 서비스 -->
 <section class="service">
   <div class="inner">
     <div class="service__content">

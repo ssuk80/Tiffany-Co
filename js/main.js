@@ -83,3 +83,38 @@ spyEls.forEach(function (spyEl) {
     // (필수) - 라이브러리에서 지정한 문법으로 깊게 이해
   
 });
+
+//  light 위에  떠있는 부유 요소 애니메이션
+// gsap.to(요소, 지속시간, 옵션: {})
+gsap.to('.floating1', 1, {
+  delay: 1,//얼마나 늦게 애니메이션을 시작할 것인지 지연 시간 설정
+  y: 10, //transform:translateY (): 와 같음, 수직으로 얼마나 움직일 지 설정
+  repeat: -1, //몇 번 반복하는지 설정, -1은 무한 반복을 의미함
+  yoyo: true, // 한번 재생된 애니메이션을 다시 뒤로 재생
+  ease: Power1.easeInOut //Easing함수 적용, 느리게 - 빠르게 -느리게
+ });
+
+//모달창 띄우기
+ const modal = document.getElementById("modal")
+ const btnModal = document.getElementById("btn-modal")
+ btnModal.addEventListener("click", e => {
+     modal.style.display = "flex"
+ })
+//모달창 닫음 버튼
+const closeBtn = modal.querySelector(".close-area")
+closeBtn.addEventListener("click", e => {
+    modal.style.display = "none"
+})
+//모달창 바깥영역 클릭시 닫음
+modal.addEventListener("click", e => {
+  const evTarget = e.target
+  if(evTarget.classList.contains("modal-overlay")) {
+      modal.style.display = "none"
+  }
+})
+//모달창 Esc버튼 누르면 닫음
+window.addEventListener("keyup", e => {
+  if(modal.style.display === "flex" && e.key === "Escape") {
+      modal.style.display = "none"
+  }
+})
