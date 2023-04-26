@@ -102,8 +102,8 @@ gsap.to('.floating1', 1, {
  });
 
 //모달창 띄우기
- const modal = document.getElementsByClassName("modal");
- const btnModal = document.getElementByClassName("btn-modal");
+ const modal = document.getElementById("modal");
+ const btnModal = document.getElementById("btn-modal");
  btnModal.addEventListener("click", function() {
      modal.style.display = "flex";
  });
