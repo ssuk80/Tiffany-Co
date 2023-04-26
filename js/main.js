@@ -76,13 +76,6 @@ new Swiper ('.visual .swiper', {
 });
 
 
-
-
-
-
-
-
-
 //scrollMagic사용
 const spyEls = document.querySelectorAll('section.scroll-spy');
 
@@ -109,8 +102,8 @@ gsap.to('.floating1', 1, {
  });
 
 //모달창 띄우기
- const modal = document.getElementById("modal");
- const btnModal = document.getElementById("btn-modal");
+ const modal = document.getElementsByClassName("modal");
+ const btnModal = document.getElementByClassName("btn-modal");
  btnModal.addEventListener("click", function() {
      modal.style.display = "flex";
  });
