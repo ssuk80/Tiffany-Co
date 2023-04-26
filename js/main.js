@@ -56,7 +56,14 @@ new Swiper ('.visual .swiper', {
   }, //자동재생여부
   slidesPerView: 3,//한번에 보여줄 슬라이드 개수(기본값:1)
   centeredSlides: true,//1번 슬라이스가 가운데 보이기
-
+  breakpoints: {
+    768: {
+      slidesPerView :1
+    },
+    1024: {
+      slidesPerView :3
+    }
+  },
   pagination: {
     el:'.visual .swiper-pagination' , //페이지 번호 요소 선택자
     clickable: true //사용자 페이지 번호 요소 제어 가능 여부
@@ -67,6 +74,13 @@ new Swiper ('.visual .swiper', {
   },
 
 });
+
+
+
+
+
+
+
 
 
 //scrollMagic사용
@@ -95,26 +109,31 @@ gsap.to('.floating1', 1, {
  });
 
 //모달창 띄우기
- const modal = document.getElementById("modal")
- const btnModal = document.getElementById("btn-modal")
- btnModal.addEventListener("click", e => {
-     modal.style.display = "flex"
- })
+ const modal = document.getElementById("modal");
+ const btnModal = document.getElementById("btn-modal");
+ btnModal.addEventListener("click", function() {
+     modal.style.display = "flex";
+ });
 //모달창 닫음 버튼
 const closeBtn = modal.querySelector(".close-area")
-closeBtn.addEventListener("click", e => {
-    modal.style.display = "none"
-})
+closeBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+});
 //모달창 바깥영역 클릭시 닫음
-modal.addEventListener("click", e => {
+modal.addEventListener("click", function(e) {
   const evTarget = e.target
   if(evTarget.classList.contains("modal-overlay")) {
-      modal.style.display = "none"
+      modal.style.display = "none";
   }
-})
+});
 //모달창 Esc버튼 누르면 닫음
-window.addEventListener("keyup", e => {
+window.addEventListener("keyup", function(e) {
   if(modal.style.display === "flex" && e.key === "Escape") {
-      modal.style.display = "none"
+      modal.style.display = "none";
   }
-})
+});
+
+//현재 연도 표시
+//날짜 정보를 가진 js의 Data객체를 이용
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();//현재연도의 정보가 숫자 데이터로 반환됨

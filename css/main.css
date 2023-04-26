@@ -30,10 +30,12 @@ a {
   text-decoration: none;
   color: inherit;
   display: block;
+  cursor: pointer;
 }
 
 a:hover, a:visited, a:link, a:active {
   color: var(--color-graytext);
+  cursor: pointer;
 }
 
 .btn {
@@ -725,7 +727,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
 /* service */
 .service {
   position: relative; 
-  margin-bottom: 50px ;
+  margin-bottom: 20px ;
 }
 
 .service .service__content { 
@@ -737,7 +739,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
   padding: 30px;
   background-color: var(--color-graybg);
   text-align: center;
-  margin:0  20px;
+  margin:0 20px;
   flex-wrap: wrap;
 }
 
@@ -764,9 +766,57 @@ header .m-nav .m-nav__submenu > li > a:hover {
   color:var(--color-pointtext)
 }
 
+footer {
+  border-top: 1px solid #3DBAAF;
+} 
 
- 
+footer > .inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-menu {
+  width:70%;
+}
 
+.footer-menu ul {
+  display: flex;
+  color: var(--color-graytext);
+}
+
+.footer-menu ul li {
+  padding:20px 10px;
+}
+.footer-menu ul li a:hover {
+  color: var(--color-text)
+}
+
+.footer-sns {
+  width:30%;
+}
+
+.footer-sns ul {
+  display: flex;
+}
+
+.footer-sns ul li { padding: 10px 15px;}
+
+.footer-sns li span {
+  font-size: 30px;
+  color:#8B8B8B
+}
+
+.footer-sns li a:hover span {
+  color:var(--color-pointcolor);
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 25px;
+  color: var(--color-pointtext);
+  height: 50px;
+}
 
 
 @media screen and (max-width:768px) {
@@ -938,7 +988,6 @@ header .m-nav .m-nav__submenu > li > a:hover {
    }
 
   .service .service__content {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -949,5 +998,14 @@ header .m-nav .m-nav__submenu > li > a:hover {
     margin-bottom: 30px;
   }
 
-
+  footer .footer-menu {
+    display: flex;
+    justify-content: center;
+    width:100%;
+  }
+  footer .footer-sns {
+    display: flex;
+    justify-content: center;
+    width:100%;
+  }
 }
