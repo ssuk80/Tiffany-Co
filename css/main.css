@@ -508,17 +508,14 @@ header .m-nav .m-nav__submenu > li > a:hover {
   backdrop-filter: blur( 13.5px );
   -webkit-backdrop-filter: blur( 13.5px );
   width: 900px;
-  height: 600px;
   position: relative;
   top: -50px;
   padding: 30px;
 }
 
 #modal .title {
-  padding-left: 10px;
-  display: inline;
+  padding-left: 20px;
   color:var(--color-text);
-  
 }
 
 #modal .title {
@@ -526,18 +523,30 @@ header .m-nav .m-nav__submenu > li > a:hover {
   font-weight: bold;
 }
 
+#modal .title span {
+  display: block;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-graytext);
+  line-height: 25px;
+}
+
 #modal .close-area {
   position: absolute;
-  right:20px;
+  right: 20px;
   cursor: pointer;
   color: var(--color-pointcolor);
 }
 
 #modal .content {
-  margin-top: 20px;
-  padding: 0px 10px;
-  background-color: #656565;
-  height: 480px;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+#modal .content video {
+  max-width: 100%;
 }
 
 #modal.modal-overlay {
@@ -844,6 +853,9 @@ header .m-nav .m-nav__submenu > li > a:hover {
     background-color: var(--color-graybg);
   }
  
+  #modal .modal-window {
+    width:100%;
+  }
 
   .gemstone { flex-wrap: wrap; }
 
