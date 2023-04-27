@@ -126,6 +126,9 @@ window.addEventListener("keyup", function(e) {
   }
 });
 
+
+
+
 //현재 연도 표시
 //날짜 정보를 가진 js의 Data객체를 이용
 const thisYear = document.querySelector('.this-year');
