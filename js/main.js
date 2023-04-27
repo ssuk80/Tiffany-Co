@@ -1,3 +1,16 @@
+//탑메뉴 로그인 모달창
+const loGinModal = document.getElementById("login_modal");
+const loGinOpen = document.getElementById("login_open_btn");
+loGinOpen.addEventListener("click", function(){
+  loGinModal.style.display = "flex";
+});
+  
+const moDalClose = loGinModal.querySelector(".close_btn")
+moDalClose.addEventListener("click", function () {
+  loGinModal.style.display = "none";
+});
+
+
 // 검색창 요소 (.search) 선택 시 강제 포커스 및 제어
 const searchE1 = document.querySelector('.search');
 // console.log(searchE1); 요소가 있는지 확인
@@ -101,7 +114,8 @@ gsap.to('.floating1', 1, {
   ease: Power1.easeInOut //Easing함수 적용, 느리게 - 빠르게 -느리게
  });
 
-//모달창 띄우기
+
+//동영상 모달창 띄우기
  const modal = document.getElementById("modal");
  const btnModal = document.getElementById("btn-modal");
  btnModal.addEventListener("click", function() {
@@ -125,8 +139,6 @@ window.addEventListener("keyup", function(e) {
       modal.style.display = "none";
   }
 });
-
-
 
 
 //현재 연도 표시

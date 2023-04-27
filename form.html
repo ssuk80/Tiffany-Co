@@ -10,55 +10,9 @@
   <!-- 머트리얼 아이콘 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   
-  <script>
 
-    const myModal = document.getElementById("my_modal");
-    const moDalOpen = document.getElementById("modal_open_btn");
-    moDalOpen.addEventListener("click",function(){
-      myModal.style.display = "flex";
-    });
-      
-   
-     
-    const moDalClose = myModal.querySelector(".modal_close_btn")
-    moDalClos.addEventListener("click", function () {
-      myModal.style.display = "none";
-      
-    })
-    
-  
-    
-    
-   
-  </script>
 </head>
 <body>
-  <span class="material-icons"><a href=""  id="modal_open_btn">person</a></span>
-  <div class="modal_overlay" id="my_modal">
-    <div class="modal_made">   
-      <div class="modal-header">
-        <h3 class="modal-title">로그인</h3>
-        <span class="material-icons"><a href="javascript:void(0)" class="modal_close_btn">close</span>
-      </div>
-      <div class="modal-body">
-        <!-- 로그인 영역 -->
-        <div class="login">
-            <form action="" class="form_label">
-              <label for="id">아이디</label><input type="text" name="id" maxlength="10" class="input_gray">
-              <label for="pw">비밀번호</label><input type="password" name="pw" maxlength="10" class="input_gray">
-            </form>
-            <p class="pw_search"><a href="javascript:void(0)">비밀번호 찾기 ></a></p>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <p class="btn-group">
-          <a href="javascript:void(0)" class="btn btn--darkmint">로그인</a>
-          <a href="javascript:void(0)" class="btn btn--gray" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">회원가입</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
   <!-- <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
       <div class="modal-content member">

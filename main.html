@@ -65,7 +65,35 @@
   <div class="inner">
     <div class="topmenu">
       <span>상담예약</span>
-      <span class="material-icons"><a href="" id="modal_made">person</a></span>
+      <span class="material-icons"><a href="javascript:void(0)" id="login_open_btn">person</a></span>
+      <!-- 로그인 모달 -->
+      <div id="login_modal" class="mymodal_overlay">
+        <div class="modal_made">   
+          <div class="modal-header">
+            <h3 class="modal-title">로그인</h3>
+            <div class="close_btn">
+              <span class="material-icons"><a href="javascript:void(0)">close</span>
+            </div>
+          </div>
+          <div class="modal-body">
+            <!-- 로그인 컨텐츠 영역 -->
+            <div class="login">
+                <form action="" class="form_label">
+                  <label for="id">아이디</label><input type="text" name="id" maxlength="10" class="input_gray">
+                  <label for="pw">비밀번호</label><input type="password" name="pw" maxlength="10" class="input_gray">
+                </form>
+                <p class="pw_search"><a href="javascript:void(0)">비밀번호 찾기 ></a></p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p class="btn-group">
+              <a href="javascript:void(0)" class="btn btn--darkmint">로그인</a>
+              <a href="javascript:void(0)" class="btn btn--gray">회원가입</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 로그인 모달창 끝 -->
       <div class="search">
         <input type="text">
         <span class="material-icons">search</span>
@@ -152,6 +180,10 @@
       <a href="#" class="btn-close">
         <span class="material-icons">close</span>
       </a>
+    </div>
+    <div class="search">
+      <input type="text">
+      <span class="material-icons">search</span>
     </div>
     <ul>
       <li class="m-main-menu"><a href="#">네크니스 및 펜던트<span class="material-icons">expand_more</a></span>
