@@ -140,6 +140,18 @@ window.addEventListener("keyup", function(e) {
   }
 });
 
+//회원가입
+const memBerModal = document.getElementById("member_modal");
+const memBerOpen = document.getElementById("member_open_btn");
+
+memBerOpen.addEventListener('click', function(){
+  memBerModal.style.display = "flex";
+});
+const memBerClose  = memBerModal.querySelector(".close_btn");
+memBerClose.addEventListener('click', function(){
+  memBerModal.style.display = "none";
+});
+
 
 //현재 연도 표시
 //날짜 정보를 가진 js의 Data객체를 이용

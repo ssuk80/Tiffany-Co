@@ -173,14 +173,14 @@
     </ul>
   </nav>
   <p>
-  <a href="#" class="btn-hamburger">
+  <a href="javascript:void(0)" class="btn-hamburger">
     <span class="material-icons">menu</span>
   </a>
   </p>
   <!-- 추가 모바일용 메뉴 -->
   <nav class="m-nav">
     <div>
-      <a href="#" class="btn-close">
+      <a href="javascript:void(0)" class="btn-close">
         <span class="material-icons">close</span>
       </a>
     </div>
@@ -460,20 +460,76 @@
   <div class="inner">
     <div class="footer-menu">
       <ul>
-        <li><a href="javascript:void(0)">회원가입</a></li>
+        <li><a href="javascript:void(0)" id="member_open_btn">회원가입</a></li>
         <li><a href="javascript:void(0)">상담예약</a></li>
         <li><a href="javascript:void(0)">자주하는 질문</a></li>
         <li><a href="javascript:void(0)">관리 및 수리</a></li>
         <li><a href="javascript:void(0)">카다로그</a></li>
       </ul>
     </div>
+    <!-- 회원가입 모달 -->
+    <div id="member_modal" class="mymodal_overlay">
+      <div class="modal_made">   
+        <div class="modal-header">
+          <h3 class="modal-title">회원가입</h3>
+          <div class="close_btn">
+            <span class="material-icons"><a href="javascript:void(0)">close</span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <!-- 회원가입 컨텐츠 영역 -->
+          <div class="member-join">
+            <form action="" class="form_label">
+              <label for="id">아이디</label><input type="text" id="id" name="id" maxlength="10" class="input_gray input_40"> <input type="submit" value="중복확인" class="submit">
+              <label for="pw">비밀번호</label><input type="password" id="pw" name="pw" maxlength="10" class="input_gray input_40">
+              <label for="pw-check">비밀번호 확인</label><input type="password" id="pw-check" name="pw" maxlength="10" class="input_gray input_40">
+              <label for="name">이름</label><input type="text" id="name" name="id" maxlength="10" class="input_gray input_40">
+              <label for="birthday">생년월일</label>
+              <input type="text" id="birthday_y" name="birthday_y" placeholder="년(4자)" maxlength="4" class="input_gray input_90p margin_r10">
+              <select name="birthday_m" id="birthday_m" maxlength="4" class="margin_r10">
+                <option value="" selected>월</option>
+                <option>1</option>  
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+              </select>
+              <input type="text" id="birthday" placeholder="일" maxlength="2" class="input_gray input_90p">
+              <label for="gender" class="gender">성별</label>
+              <span class="margin_r10"><input type="radio" id="gender" name="men" value="men" > 남자</span>
+              <span><input type="radio" id="gender" name="women" value="women"> 여자</span>
+              <label for="email">이메일</label>
+              <input type="email" id="email">&nbsp;@&nbsp;
+              <select name="email" id="email">
+                <option value=""selected>gmail.com</option>
+                <option>naver.com</option>
+                <option>hanmail.com</option>
+              </select> 
+              <label for="phone">전화번호</label>
+              <input type="tel" id="phone" name="phone" placeholder="010-1234-5678">            
+              <button type="button" class="button">인증받기</button>&nbsp;
+              <p class="phone"><input type="text" id="phone" placeholder="인증번호를 입력하세요" disabled></p>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p class="btn-group">
+            <a href="javascript:void(0)" class="btn btn--darkmint">가입하기</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 회원가입 모달창 끝 -->
     <div class="footer-sns">
       <ul>
-        <li><a href="javascript:void(0)"><span class="mdi mdi-instagram"></span></a></li>
-        <li><a href="javascript:void(0)"><span class="mdi mdi-facebook"></span></a></li>
-        <li><a href="javascript:void(0)"><span class="mdi mdi-pinterest"></span></a></li>
-        <li><a href="javascript:void(0)"><span class="mdi mdi-twitter"></span></a></li></li>
-        <li><a href="javascript:void(0)"><span class="mdi mdi-youtube"></span></a></li></li>
+        <li><a href="javascript:void(0)" class="mdi mdi-instagram"><span>instagram</span></a></li>
+        <li><a href="javascript:void(0)" class="mdi mdi-facebook"><span>facebook</span></a></li>
+        <li><a href="javascript:void(0)" class="mdi mdi-pinterest"><span>pinterest</span></a></li>
+        <li><a href="javascript:void(0)" class="mdi mdi-twitter"><span>twitter</span></a></li></li>
+        <li><a href="javascript:void(0)" class="mdi mdi-youtube"><span>youtube</span></a></li></li>
       </ul>
     </div>
     <p class="copyright">&copy;T&CO.<span class="this-year"></span></p>

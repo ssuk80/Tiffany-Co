@@ -28,6 +28,11 @@ h2 {
 
 ul, li { text-decoration: none;}
 
+select {
+  background-color: var(--color-graybg);
+  border: 1px solid #ccc;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -40,13 +45,13 @@ a:hover, a:visited, a:link, a:active {
   cursor: pointer;
 }
 
+
+.margin_r10 { margin-right:10px;}
 .padding_r10 { padding-right:10px;}
 .input_90p {width:90px;}
 .input_40 {width :40%;}
-.input_gray {
-  background-color: var(--color-graybg);
-  border: 1px solid #ccc;
-}
+
+
 
 .btn {
   width: 130px;
@@ -165,6 +170,51 @@ a:hover, a:visited, a:link, a:active {
   padding-bottom: 10px;
 }
 
+/* 모달창 공통 */
+.mymodal_overlay {
+  position: fixed;
+  background: rgba(3, 41, 39, 0.5);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.modal_made .modal-header { 
+  position: relative;
+  border-bottom: 1px solid #e0e1e5;
+  height: 45px;
+}
+
+.modal_made .modal-header .modal-title {
+  color: var(--color-pointcolor);
+  font-size: 25px;
+}
+
+.modal_made .modal-header .material-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal_made .modal-body {
+ padding-bottom: 20px;
+}
+
+.modal-body input {
+  background-color: var(--color-graybg);
+  border: 1px solid #ccc;
+}
+
+
+.modal_made .modal-footer {
+  border-top: 1px solid #e0e1e5;
+}
+
+
 /* 헤더오른쪽상단 */
 header {
   border-bottom: 2px solid var(--color-background);
@@ -215,18 +265,6 @@ header > .inner {
   display: none;
 }
 
-#login_modal.mymodal_overlay {
-  position: fixed;
-  background: rgba(3, 41, 39, 0.5);
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-}
-
 #login_modal .modal_made {
   width: 450px;
   height: 360px;
@@ -237,62 +275,36 @@ header > .inner {
   padding: 20px;
 }
 
-.modal_made .modal-header { 
-  position: relative;
-  border-bottom: 1px solid #e0e1e5;
-  height: 45px;
-}
-
-.modal_made .modal-header .modal-title {
-  color: var(--color-pointcolor);
-  font-size: 25px;
-}
-
-.modal_made .modal-header .material-icons {
-  position: absolute;
-  top : 0;
-  right: 0;
-}
-
-.modal_made .modal-body {
- padding-bottom: 20px;
-  
-}
-
-.modal_made .pw_search  {
+#login_modal .modal_made .pw_search  {
   display: block;
   padding-left: 20px;
   height: 20px;
 }
 
-.modal_made .modal-footer {
-  
-  border-top: 1px solid #e0e1e5;
-}
-
-.modal_made .modal-footer .btn-group {
+#login_modal .modal_made .modal-footer .btn-group {
   padding-top: 30px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.modal_made .modal-footer .btn-group a:first-child {
+#login_modal .modal-footer .btn-group a:first-child {
  margin-right: 10px;
 }
 
-.modal-body .login input { width: 70%; } 
+#login_modal .modal-body .login input { width: 70%; } 
 
-.modal-body .login .pw_search {
+#login_modal .modal-body .login .pw_search {
   width: 100%;
   display: block;
   padding-left: 10px;
   font-size: 14px;
 }
 
-.modal-body .login .pw_search a:hover {
+#login_modal .modal-body .login .pw_search a:hover {
   color: var(--color-pointtext);
 }
+
 
 .topmenu .search {
   position: relative;
@@ -981,14 +993,47 @@ footer > .inner {
 
 .footer-sns ul li { padding: 10px 15px;}
 
-.footer-sns li span {
+.footer-sns li a {
   font-size: 30px;
   color:#8B8B8B
 }
-
-.footer-sns li a:hover span {
+.footer-sns li span {
+  display: none;
+}
+.footer-sns li a:hover  {
   color:var(--color-pointcolor);
 }
+
+/* 회원가입 모달창 */
+#member_modal.mymodal_overlay {
+  display: none;
+}
+
+#member_modal .modal_made {
+  width: 600px;
+  height: 750px;
+  background: #fff ;
+  z-index: 10;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #2f5253;
+  padding: 20px;
+  background: url(../images/member.jpg) no-repeat #fff right bottom;
+}
+
+
+#member_modal .modal-footer .btn-group {
+  margin: 30px 10px;
+}
+
+#member_modal .submit , #member_modal .button {
+  margin-left: 10px;
+  width: 90px;
+  background-color: var(--color-graytext);
+  color:#fff;
+  border:1px solid var(--color-text);
+  border-radius: 5px;
+}
+
 
 .copyright {
   display: flex;
@@ -1020,7 +1065,6 @@ footer > .inner {
     height: 65px;
     position: fixed;
     z-index: 3;
-    
   }
 
   .inner{
@@ -1199,6 +1243,7 @@ footer > .inner {
     justify-content: center;
     width:100%;
   }
+
   footer .footer-sns {
     display: flex;
     justify-content: center;
