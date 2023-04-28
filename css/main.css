@@ -537,6 +537,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
   position: absolute; 
   bottom: 20px;
   color: var(--color-pointtext);
+  z-index: 2;
 }
 
 .visual .swiper-button-prev {
