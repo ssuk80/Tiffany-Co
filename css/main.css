@@ -1,3 +1,4 @@
+/* 공통스타일 */
 :root {
   --color-graybg: #F5F5F5;
   --color-graytext: #656565;
@@ -26,6 +27,7 @@ h2 {
 }
 
 ul, li { text-decoration: none;}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -163,6 +165,48 @@ a:hover, a:visited, a:link, a:active {
   padding-bottom: 10px;
 }
 
+/* 헤더오른쪽상단 */
+header {
+  border-bottom: 2px solid var(--color-background);
+}
+
+header > .inner {
+  position: relative;
+}
+
+.topmenu {
+  position: absolute;
+  top: 5px;
+  width: 300px;
+  right: -160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: #8B8B8B;
+}
+
+.topmenu:hover {
+  color: var(--color-graytext);
+}
+
+.topmenu span:nth-child(1), span:nth-child(2) {
+  padding-right: 10px;
+}
+
+.topmenu .material-icons {
+  color: #8B8B8B;
+}
+
+.topmenu .material-icons a:hover { 
+  color: var(--color-background);
+}
+
+.topmenu .material-icons:first-child {
+  width: 20px;
+  height: 20px;
+}
+
+/* 로그인모달창 */
 #login_modal.mymodal_overlay {
   display: none;
 }
@@ -233,69 +277,18 @@ a:hover, a:visited, a:link, a:active {
  margin-right: 10px;
 }
 
+.modal-body .login input { width: 70%; } 
 
-
-
-
-
-
-header {
-  border-bottom: 2px solid var(--color-background);
-}
-
-header > .inner {
-  position: relative;
-}
-
-.topmenu {
-  position: absolute;
-  top: 5px;
-  width: 300px;
-  right: -160px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  color: #8B8B8B;
-}
-
-.topmenu:hover {
-  color: var(--color-graytext);
-}
-
-.topmenu span:nth-child(1), span:nth-child(2) {
-  padding-right: 10px;
-}
-
-.topmenu .material-icons {
-  color: #8B8B8B;
-}
-
-.topmenu .material-icons a:hover { 
-  color: var(--color-background);
-}
-
-.topmenu .material-icons:first-child {
-  width: 20px;
-  height: 20px;
-}
-
-.login input { width: 70%; } 
-
-.login .pw_search {
+.modal-body .login .pw_search {
   width: 100%;
   display: block;
   padding-left: 10px;
   font-size: 14px;
 }
 
-.login .pw_search a:hover {
+.modal-body .login .pw_search a:hover {
   color: var(--color-pointtext);
 }
-
-/* .modal-content.member {
-  background: url(../images/member.jpg) no-repeat right bottom;
-  background-color: #fff;
-} */
 
 .topmenu .search {
   position: relative;
@@ -309,8 +302,8 @@ header > .inner {
   border:0;
   outline: none;
   padding-left: 10px;
-  color:var(--color-graytext);
-  transition:width 0.5s;
+  color: var(--color-graytext);
+  transition: width 0.5s;
 }
 
 .topmenu .search input:focus {
@@ -339,7 +332,7 @@ h1.logo {
   user-select: none;
 }
 
-/* nav */
+/* 메인메뉴바 - nav */
 header .pc-nav { 
   margin: 0 auto;
   width:100%;
@@ -489,6 +482,41 @@ header .m-nav > ul > li > a > span {
   right:10px;
 }
 
+header .m-nav .m-topmenu {
+  position: relative;
+  width: 70%;
+}
+
+header .m-nav .m-topmenu input {
+  height: 30px;
+  width: 80%;
+  background-color: var(--color-graybg);
+  border-radius: 8px;
+  border:0;
+  outline: none;
+  padding-left: 10px;
+  margin:5px 0 0 20px;
+  color: var(--color-graytext);
+}
+
+header .m-nav .search  {
+  position: absolute;
+  display: block;
+  color: var(--color-pointcolor);
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+}
+
+header .m-nav .m-topmenu .person     {
+  position: absolute;
+  display: block;
+  color: var(--color-pointtext);
+  top: 10px;
+  right: 0;
+  cursor: pointer;
+}
+
 header .m-nav li.m-main-menu .m-menu__submenu {
   width: 100%;
   background-color: #DFF5F2;
@@ -634,7 +662,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
   width: 150px;
 }
 
-/* modal */
+/* 동영상 모달창 */
 #modal.modal-overlay {
   width: 100%;
   height: 100%;
@@ -912,6 +940,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
   color: var(--color-pointtext)
 }
 
+/* 푸터 */
 footer {
   border-top: 1px solid #3DBAAF;
 } 
@@ -964,7 +993,19 @@ footer > .inner {
   height: 50px;
 }
 
+#top {
+  position: fixed;
+  width:48px;
+  height:57px;
+  bottom:30px;
+  right:30px;
+  cursor: pointer;
+  z-index: 8;
+  opacity: 0.9;
+}
 
+
+/* 모바일 */
 @media screen and (max-width:768px) {
   body { overflow-x: hidden ;}
   header {
