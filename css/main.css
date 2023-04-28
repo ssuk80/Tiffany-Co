@@ -174,7 +174,6 @@ a:hover, a:visited, a:link, a:active {
   top: 0;
   left: 0;
   height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 3;
