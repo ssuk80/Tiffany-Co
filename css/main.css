@@ -168,6 +168,10 @@ a:hover, a:visited, a:link, a:active {
 /* 헤더오른쪽상단 */
 header {
   border-bottom: 2px solid var(--color-background);
+  position: fixed;
+  z-index: 3;
+  background-color: #fff;
+  width: 100%;
 }
 
 header > .inner {
@@ -492,10 +496,10 @@ header .m-nav .m-topmenu input {
   width: 80%;
   background-color: var(--color-graybg);
   border-radius: 8px;
-  border:0;
+  border: 0;
   outline: none;
   padding-left: 10px;
-  margin:5px 0 0 20px;
+  margin: 5px 0 0 20px;
   color: var(--color-graytext);
 }
 
