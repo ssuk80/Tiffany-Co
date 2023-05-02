@@ -260,6 +260,10 @@ header > .inner {
   height: 20px;
 }
 
+.topmenu .search label {
+  display: none;
+}
+
 /* 로그인모달창 */
 #login_modal.mymodal_overlay {
   display: none;
@@ -647,7 +651,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
 .light > .inner { display: flex; }
 
 .light .img-area {
-  background-image: url(../images/light.jpg) ;
+  background-image: url(../images/light.webp) ;
   position: relative;
   width: 630px;
   height: 400px;
