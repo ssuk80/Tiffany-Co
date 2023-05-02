@@ -653,8 +653,8 @@ header .m-nav .m-nav__submenu > li > a:hover {
 .light .img-area {
   background-image: url(../images/light.webp) ;
   position: relative;
-  width: 630px;
-  height: 400px;
+  min-width: 630px;
+  min-height: 400px;
 }
 
 .light .img-area .bird {
