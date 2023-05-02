@@ -2,26 +2,26 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible"  name=”description” content="IE=edge">
-  <meta name="viewport" name=”description” content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 오픈 그래프와 트위터 카드 설정  -->
   <!-- 오픈 그래프 -->
   <!-- 웹페이지가 소셜미디어 (페이스북,카톡등)로 공유될때 우선적으로 활용되는 정보 -->
-  <meta property="og:type" name=”description” content="website" />
-  <meta property="og:site_name"  name=”description” content="Tiffany&Co" />
-  <meta property="og:title"  name=”description” content="Tiffany&Co KR" />
-  <meta property="og:description" name=”description” content="Luxury Jewelry, Gifts & Accessories Since 1837" />
-  <meta property="og:image"  name=”description” content="./images/starbucks_seo.jpg" />
-  <meta property="og:url"  name=”description” content="https://tiffany.kr" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tiffany&Co" />
+  <meta property="og:title" content="Tiffany&Co KR" />
+  <meta property="og:description" content="Luxury Jewelry, Gifts & Accessories Since 1837" />
+  <meta property="og:image" content="./images/opengraph_img.png" />
+  <meta property="og:url" content="https://tiffany.kr" />
 
   <!-- 트위터 카드 -->
   <!-- 웹페이지가 소셜미디어 (트위터)로 공유될때 우선적으로 활용되는 정보 --> 
-  <meta property="twitter:card"  name=”description” content="summary" />
-  <meta property="twitter:site"  name=”description” content="Tiffany&Co" />
-  <meta property="twitter:title"  name=”description” content="Tiffany&Co KR" />
-  <meta property="twitter:description"  name=”description” content="Luxury Jewelry, Gifts & Accessories Since 1837" />
-  <meta property="twitter:image"  name=”description” content="./images/opengraph_img.png" />
-  <meta property="twitter:url"  name=”description” content="https://tiffany.kr" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="Tiffany&Co" />
+  <meta property="twitter:title" content="Tiffany&Co KR" />
+  <meta property="twitter:description" content="Luxury Jewelry, Gifts & Accessories Since 1837" />
+  <meta property="twitter:image" content="./images/opengraph_img.png" />
+  <meta property="twitter:url" content="https://tiffany.kr" />
   <title>Tiffany&Co</title>
   <!-- 스타일 초기화-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
@@ -72,13 +72,13 @@
           <div class="modal-header">
             <h3 class="modal-title">로그인</h3>
             <div class="close_btn">
-              <span class="material-icons"><a href="javascript:void(0)">close</span>
+              <span class="material-icons"><a href="javascript:void(0)">close</a></span>
             </div>
           </div>
           <div class="modal-body">
             <!-- 로그인 컨텐츠 영역 -->
             <div class="login">
-                <form action="" class="form_label">
+                <form name="login" action="login" class="form_label" >
                   <label for="id">아이디</label><input type="text" name="id" maxlength="10" class="input_gray">
                   <label for="pw">비밀번호</label><input type="password" name="pw" maxlength="10" class="input_gray">
                 </form>
@@ -95,7 +95,7 @@
       </div>
       <!-- 로그인 모달창 끝 -->
       <div class="search">
-        <label for="열리는검색창"><input type="text" id="열리는검색창"></label>
+        <form><label for="열리는검색창"><input type="text" id="열리는검색창"></label></form>
         <span class="material-icons">search</span>
       </div>
     </div>
@@ -190,7 +190,7 @@
       <p><span class="material-icons person">person</span></p>
     </div>
     <ul>
-      <li class="m-main-menu"><a href="javascript:void(0)">네크니스 및 펜던트<span class="material-icons">expand_more</a></span>
+      <li class="m-main-menu"><a href="javascript:void(0)">네크니스 및 펜던트</a><span class="material-icons">expand_more</span>
         <ul class="m-menu__submenu">
           <li><a href="javascript:void(0)">체인</a></li>
           <li><a href="javascript:void(0)">데일리 다이아몬드</a></li>
@@ -198,7 +198,7 @@
           <li><a href="javascript:void(0)">레이어링</a></li>
         </ul>
       </li>
-      <li class="m-main-menu"><a href="javascript:void(0)">브레이슬릿<span class="material-icons">expand_more</span></a>
+      <li class="m-main-menu"><a href="javascript:void(0)">브레이슬릿</a><span class="material-icons">expand_more</span>
         <ul class="m-menu__submenu">
           <li><a href="javascript:void(0)">체인</a></li>
           <li><a href="javascript:void(0)">뱅글</a></li>
@@ -207,7 +207,7 @@
           <li><a href="javascript:void(0)">테니스</a></li>
         </ul>
       </li>
-      <li class="m-main-menu"><a href="javascript:void(0)">이어링<span class="material-icons">expand_more</span></a>
+      <li class="m-main-menu"><a href="javascript:void(0)">이어링</a><span class="material-icons">expand_more</span>
         <ul class="m-menu__submenu">
           <li><a href="javascript:void(0)">스터드</a></li>
           <li><a href="javascript:void(0)">후프</a></li>
@@ -215,7 +215,7 @@
           <li><a href="javascript:void(0)">스테이먼트</a></li>
         </ul>
       </li>
-      <li class="m-main-menu"><a href="javascript:void(0)">링<span class="material-icons">expand_more</span></a>
+      <li class="m-main-menu"><a href="javascript:void(0)">링</a><span class="material-icons">expand_more</span>
         <ul class="m-menu__submenu">
           <li><a href="javascript:void(0)">웨딩밴드</a></li>
           <li><a href="javascript:void(0)">스태킹</a></li>
@@ -224,14 +224,14 @@
           <li><a href="javascript:void(0)">스그넷</a></li>
         </ul>
       </li>
-      <li class="m-main-menu"><a href="javascript:void(0)">커플/웨딩링<span class="material-icons">expand_more</span></a>
+      <li class="m-main-menu"><a href="javascript:void(0)">커플/웨딩링</a><span class="material-icons">expand_more</span>
         <ul class="m-menu__submenu">
           <li><a href="javascript:void(0)">여성용 웨딩링</a></li>
           <li><a href="javascript:void(0)">남성용 웨딩링</a></li>
           <li><a href="javascript:void(0)">웨딩밴드셋트</a></li>
         </ul>
       </li>
-      <li class="m-main-menu"><a href="javascript:void(0)">남성주얼리<span class="material-icons">expand_more</span></a>
+      <li class="m-main-menu"><a href="javascript:void(0)">남성주얼리</a><span class="material-icons">expand_more</span>
         <ul class="m-menu__submenu">
           <li><a href="javascript:void(0)">링</a></li>
           <li><a href="javascript:void(0)">브레이슬릿</a></li>
@@ -327,8 +327,9 @@
             티파니가 재해석한 크라운 주얼리를 가장 먼저 경험하세요.</span>
       </div>
       <div class="content">
-        <video controls name="media">
+        <video controls>
           <source src="https://media.tiffany.com/is/content/tiffanydm/TiffanyLandmark_Teaser_1920x1080" type="video/mp4">
+          해당 브라우저는 video 태그를 지원하지 않습니다.
         </video>
       </div>
   </div>
@@ -473,20 +474,20 @@
         <div class="modal-header">
           <h3 class="modal-title">회원가입</h3>
           <div class="close_btn">
-            <span class="material-icons"><a href="javascript:void(0)">close</span>
+            <span class="material-icons"><a href="javascript:void(0)">close</a></span>
           </div>
         </div>
         <div class="modal-body">
           <!-- 회원가입 컨텐츠 영역 -->
           <div class="member-join">
-            <form action="" class="form_label">
+            <form action="memberjoin" class="form_label">
               <label for="id">아이디</label><input type="text" id="id" name="id" maxlength="10" class="input_gray input_40"> <input type="submit" value="중복확인" class="submit">
               <label for="pw">비밀번호</label><input type="password" id="pw" name="pw" maxlength="10" class="input_gray input_40">
               <label for="pw-check">비밀번호 확인</label><input type="password" id="pw-check" name="pw" maxlength="10" class="input_gray input_40">
               <label for="name">이름</label><input type="text" id="name" name="id" maxlength="10" class="input_gray input_40">
               <label for="birthday">생년월일</label>
               <input type="text" id="birthday_y" name="birthday_y" placeholder="년(4자)" maxlength="4" class="input_gray input_90p margin_r10">
-              <select name="birthday_m" id="birthday_m" maxlength="4" class="margin_r10">
+              <select name="birthday_m" id="birthday_m" class="margin_r10">
                 <option value="" selected>월</option>
                 <option>1</option>  
                 <option>2</option>
@@ -497,21 +498,20 @@
                 <option>7</option>
                 <option>8</option>
               </select>
-              <input type="text" id="birthday" placeholder="일" maxlength="2" class="input_gray input_90p">
-              <label for="gender" class="gender">성별</label>
-              <span class="margin_r10"><input type="radio" id="gender" name="men" value="men" > 남자</span>
-              <span><input type="radio" id="gender" name="women" value="women"> 여자</span>
+              <input type="text" id="birthday" placeholder="일" maxlength="2" class="input_gray input_90p">&nbsp;
+              <span class="margin_r10"><label><input type="radio" id="men" name="gender" value="men" > 남자</label></span>
+              <span><label><input type="radio" id="women" name="gender" value="women"> 여자</label></span>
               <label for="email">이메일</label>
               <input type="email" id="email">&nbsp;@&nbsp;
-              <select name="email" id="email">
-                <option value=""selected>gmail.com</option>
-                <option>naver.com</option>
-                <option>hanmail.com</option>
+              <select name="emailcompany" id="emailcompany">
+                <option value="gmail.com" selected>gmail.com</option>
+                <option value="naver.com">naver.com</option>
+                <option value="hanmail.com">hanmail.com</option>
               </select> 
               <label for="phone">전화번호</label>
               <input type="tel" id="phone" name="phone" placeholder="010-1234-5678">            
               <button type="button" class="button">인증받기</button>&nbsp;
-              <p class="phone"><input type="text" id="phone" placeholder="인증번호를 입력하세요" disabled></p>
+              <p class="phone"><input type="text" id="certification" placeholder="인증번호를 입력하세요" disabled></p>
             </form>
           </div>
         </div>
@@ -528,15 +528,15 @@
         <li><a href="javascript:void(0)" class="mdi mdi-instagram"><span>instagram</span></a></li>
         <li><a href="javascript:void(0)" class="mdi mdi-facebook"><span>facebook</span></a></li>
         <li><a href="javascript:void(0)" class="mdi mdi-pinterest"><span>pinterest</span></a></li>
-        <li><a href="javascript:void(0)" class="mdi mdi-twitter"><span>twitter</span></a></li></li>
-        <li><a href="javascript:void(0)" class="mdi mdi-youtube"><span>youtube</span></a></li></li>
+        <li><a href="javascript:void(0)" class="mdi mdi-twitter"><span>twitter</span></a></li>
+        <li><a href="javascript:void(0)" class="mdi mdi-youtube"><span>youtube</span></a></li>
       </ul>
     </div>
     <p class="copyright">&copy;T&CO.<span class="this-year"></span></p>
   </div>
   <!-- scroll to top -->
   <div id="top">
-    <a href="#"><img src="./images/top.png"></a>
+    <a href="#"><img src="./images/top.png" alt="최상단으로"></a>
   </div>
 </footer>
   
