@@ -1140,7 +1140,11 @@ footer > .inner {
   .light .img-area {
     margin: 0 30px;
     width: 100%;
+    min-width: 630px;
+    min-height: 400px;
   }
+  
+
 
   .light .text-group {
     margin: 0 30px;
