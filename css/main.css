@@ -1138,12 +1138,12 @@ footer > .inner {
   }
   
   .m-light {
+    display: block;
     margin: 30px;
   }
 
   .m-light .img-area {
     display: block;
-    padding: 40px ;
     background-color: var(--color-background);
   }
 
@@ -1152,10 +1152,33 @@ footer > .inner {
   }
 
   .m-light .text-group {
-    margin: 0 30px;
+    
     padding: 40px ;
     background-color: var(--color-graybg);
   }
+
+  .m-lightt .text-group {
+  padding: 100px 0 0 40px;
+  
+  }
+
+  .m-light .text-group p  {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-text);
+    line-height: 28px;
+  }
+
+  .m-light .text-group span {
+    display: block;
+    padding: 20px 0;
+    color: var(--color-graytext);
+  }
+
+  .m-light .text-group a.btn {
+    width: 150px;
+  }
+
  
   #modal .modal-window {
     width:100%;
