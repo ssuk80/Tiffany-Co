@@ -1143,7 +1143,6 @@ footer > .inner {
   }
 
   .m-light .img-area {
-    display: block;
     background-color: var(--color-background);
   }
 
@@ -1152,12 +1151,11 @@ footer > .inner {
   }
 
   .m-light .text-group {
-    
     padding: 40px ;
     background-color: var(--color-graybg);
   }
 
-  .m-lightt .text-group {
+  .m-light .text-group {
   padding: 100px 0 0 40px;
   
   }
