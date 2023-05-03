@@ -1180,7 +1180,7 @@ footer > .inner {
   }
 
   .m-propose .text-group {
-    /* position: absolute; */
+    position: relative;
     padding:30px;
     top:30px;
     right:20px;
