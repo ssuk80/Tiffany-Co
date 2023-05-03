@@ -1146,10 +1146,12 @@ footer > .inner {
   .light .m-img-area {
     display: block;
     margin: 30px; 
-    width: 100%;   
+    width: 767px;   
     background-color: var(--color-background);
   }
-  
+  .light .m-img-area img {
+    width: 70%;
+  }
 
   .light .text-group {
     margin: 0 30px;
