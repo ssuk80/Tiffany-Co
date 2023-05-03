@@ -468,6 +468,7 @@ header .m-nav {
   width: 50%;
   right:-50%;
   transition: .5s;
+  max-width: 330px;
 }
 
 header .m-nav.active {
@@ -504,12 +505,13 @@ header .m-nav > ul > li > a > span {
 
 header .m-nav .m-topmenu {
   position: relative;
-  width: 70%;
+  width: 250px;
 }
 
 header .m-nav .m-topmenu input {
+  position: relative;
   height: 30px;
-  width: 80%;
+  width: 200px;
   background-color: var(--color-graybg);
   border-radius: 8px;
   border: 0;
@@ -525,15 +527,6 @@ header .m-nav .search  {
   color: var(--color-pointcolor);
   top: 10px;
   right: 25px;
-  cursor: pointer;
-}
-
-header .m-nav .m-topmenu .person     {
-  position: absolute;
-  display: block;
-  color: var(--color-pointtext);
-  top: 10px;
-  right: 0;
   cursor: pointer;
 }
 
@@ -661,6 +654,10 @@ header .m-nav .m-nav__submenu > li > a:hover {
   position: absolute;
   top:5px;
   right:180px;
+}
+
+.light .m-img-area {
+  display: none;
 }
 
 .light .text-group {
@@ -1143,11 +1140,16 @@ footer > .inner {
   }
 
   .light .img-area {
-    margin: 0 30px;
-    width: 100%;
+   display: none;
   }
   
-
+  .light .m-img-area {
+    display: block;
+    margin: 30px; 
+    width: 100%;   
+    background-color: var(--color-background);
+  }
+  
 
   .light .text-group {
     margin: 0 30px;
