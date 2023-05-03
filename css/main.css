@@ -1172,7 +1172,6 @@ footer > .inner {
   .m-propose {
     position: relative;
     display: block;
-    height: 350px;
     margin-bottom: 50px;
   }
 
@@ -1181,7 +1180,8 @@ footer > .inner {
   }
 
   .m-propose .text-group {
-    position: absolute;
+    /* position: absolute; */
+    padding:30px;
     top:30px;
     right:20px;
   }
@@ -1245,7 +1245,7 @@ footer > .inner {
     width:100%;
     margin-bottom: 30px;
   }
-  
+
   footer > .inner { 
     max-width:90%;
   }
