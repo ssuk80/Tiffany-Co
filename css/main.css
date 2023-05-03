@@ -852,6 +852,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
   display: none;
 }
 
+
 /* story */
 .story {
   background-color: var(--color-graybg);
@@ -919,6 +920,10 @@ header .m-nav .m-nav__submenu > li > a:hover {
   position: absolute;
   display: block;
   right: 0;
+}
+
+.m-fine {
+  display: none;
 }
 
 /* service */
@@ -1182,8 +1187,6 @@ footer > .inner {
   .m-propose .text-group {
     position: relative;
     padding:30px;
-    top:30px;
-    right:20px;
   }
 
   .m-propose .text-group p {
@@ -1225,12 +1228,32 @@ footer > .inner {
   .story .story-box img {
     width: 100%;
   }
+  .fine { display: none; }
 
-  .fine {
-    width: 100%;
-    background-image: url(../images/fine_m_bg.jpg);
+  .m-fine {
+    display: block;
+    position: relative;
+    
+    margin: 20px;
+    padding-bottom: 30px;
   }
 
+  .m-fine .text-group {
+    position: relative;
+    line-height: 25px;
+  }
+
+  .m-fine .text-group h2 {
+    padding: 20px 10px 10px;
+    text-align: left;
+  }
+  .m-fine .text-group p {
+    padding-left: 10px;
+  }
+  .m-fine .text-group span {
+    display: block;
+    padding: 10px 10px;
+  }
   .service .inner {
     width: 100%;
    }
