@@ -656,7 +656,7 @@ header .m-nav .m-nav__submenu > li > a:hover {
   right:180px;
 }
 
-.light .m-img-area {
+.m-light {
   display: none;
 }
 
@@ -1133,29 +1133,26 @@ footer > .inner {
     width:calc(100%) ;
   }
 
-  .light .inner { 
-    position: relative;
-    display: flex;
-    flex-wrap: wrap; 
-  }
-
-  .light .img-area {
+  .light{
    display: none;
   }
   
-  .light .m-img-area {
+  .m-light {
+    margin: 30px;
+  }
+
+  .m-light .img-area {
     display: block;
-    margin: 30px; 
-    width: 767px;   
+    padding: 40px ;
     background-color: var(--color-background);
   }
-  .light .m-img-area img {
+
+  .m-light .img-area img {
     width: 70%;
   }
 
-  .light .text-group {
+  .m-light .text-group {
     margin: 0 30px;
-    width: 100%;
     padding: 40px ;
     background-color: var(--color-graybg);
   }
