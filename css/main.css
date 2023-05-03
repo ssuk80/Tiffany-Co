@@ -1245,6 +1245,10 @@ footer > .inner {
     width:100%;
     margin-bottom: 30px;
   }
+  
+  footer > .inner { 
+    max-width:90%;
+  }
 
   footer .footer-menu {
     display: flex;
