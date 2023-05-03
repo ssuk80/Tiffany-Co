@@ -1200,7 +1200,7 @@ footer > .inner {
   .m-propose {
     position: relative;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .m-propose .img-group img {
@@ -1209,13 +1209,12 @@ footer > .inner {
 
   .m-propose .text-group {
     position: relative;
-    padding:30px;
+    padding: 30px;
   }
 
   .m-propose .text-group p {
     font-size: 18px;
     font-weight: bold;
-    padding-bottom: 15px;
     color: var(--color-text);
   }
   
