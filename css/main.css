@@ -1238,6 +1238,10 @@ footer > .inner {
     padding-bottom: 30px;
   }
 
+  .m-fine .fineimg { 
+    width: 70%;
+  }
+  
   .m-fine .text-group {
     position: relative;
     line-height: 25px;
