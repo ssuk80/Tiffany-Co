@@ -1139,7 +1139,11 @@ footer > .inner {
   
   .m-light {
     display: block;
-    margin: 30px;
+    margin-bottom: 40px;
+  }
+
+  .m-light > .inner {
+    width: 760px;
   }
 
   .m-light .img-area {
@@ -1151,13 +1155,8 @@ footer > .inner {
   }
 
   .m-light .text-group {
-    padding: 40px ;
+    padding: 20px 0 40px 30px;
     background-color: var(--color-graybg);
-  }
-
-  .m-light .text-group {
-  padding: 100px 0 0 40px;
-  
   }
 
   .m-light .text-group p  {
@@ -1165,6 +1164,8 @@ footer > .inner {
     font-weight: bold;
     color: var(--color-text);
     line-height: 28px;
+    
+    
   }
 
   .m-light .text-group span {
